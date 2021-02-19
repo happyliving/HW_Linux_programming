@@ -1,0 +1,14 @@
+## Linux HW3 ##
+This program is a simple file server implementation.
+
+Compile:
+	'make' to generate a binary named 'hw4'
+	'make clean' to remove temperal object file
+Run:
+	./hw4 [port] [path of docroot]
+	ex. ./hw4 12345 /docroot
+----------------------------------------------------------------------
+Finish part:
+	Basic requirement: get file and get file in the sub-directory
+Undone:
+	Advanced requirement: feature about CGI

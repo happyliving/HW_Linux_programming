@@ -1,0 +1,19 @@
+## Linux HW2 ##
+	Create a sandbox with serveral basic linux commands implementation, eg. chdir, chmod, etc.
+	This program is used to practice API injection.
+
+============================================================
+
+Compile: 
+    make to generate excutable:hw2 and shared library: sandbox.sandbox
+Run:
+    ./hw2 [-p sopath] [-d basedir] [--] cmd [cmd args ...]
+
+Note:
+    利用execvp來執行command
+    透過sandbox.so可監測命令是否會存取到執行路徑外的資料
+    如果不會就執行命令，會則拒絕並print出是被哪些api拒絕存取
+
+    但有一個bug:
+    若設-d為"/"會導致core dump
+    其他經測試後可正常運行

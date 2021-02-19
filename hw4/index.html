@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>WebServer</title>
+    </head>
+    <body>
+        <form method="post" action="testcase/post.php?t=1577275635">
+            <ol>
+                <li>Get a <a href="testcase/plain.txt">plain-text</a> file (note: the texts after (?) are used for preventing cache).</li>
+                <li>Get a simple <a href="testcase/simple.html">html</a> file (note: the texts after (?) are used for preventing cache).</li>
+                <li>Get an <a href="testcase/image.png">image</a> file (note: the texts after (?) are used for preventing cache).</li>
+                <li>Get an <a href="testcase/audio.ogg">audio</a> file (note: the texts after (?) are used for preventing cache).</li>
+                <li>Get a <a href="testcase/video.mp4">video</a> file (note: the texts after (?) are used for preventing cache).</li>
+                <li>Get a <a href="testcase/missing">missing</a> file (note: you may receive a "404 NOT FOUND" error on a standard web server, but in our homework, you have to respond "403 FORBIDDEN").</li>
+                <li>Get an <a href="testcase/noperm">inaccessible</a> file (note: you may receive a "403 FORBIDDEN" error on a standard web server, but in our homework, you have to respond "404 NOT FOUND").</li>
+                <li>Get a <a href="testcase/dir1/">directory</a> with an index file (note that we don't have the slash suffix).</li>
+                <li>Get a <a href="testcase/dir2/">directory</a> without an index file (note that we don't have the slash suffix).</li>
+                <li>Execute a <a href="testcase/printenv.php?t=1577275635">CGI</a> with GET request (sample <a href="testcase/printenv_php.txt">1</a>, <a href="testcase/printenv_sh.txt">2</a>).</li>
+                <li>Execute a <a href="testcase/printenv.php?t=1577275635&amp;p=hello world&amp;q=中文測試">CGI</a> with GET request and QUERY_STRING.</li>
+                <li>Execute a CGI with POST request:
+                    <input type="text" name="input" placeholder="type something here ...">
+                    <input type="hidden" name="hidden" value="You cannot read me!">
+                    <input type="submit">
+                    </li>
+            </ol>
+        </form>
+    </body>
+</html>

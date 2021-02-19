@@ -1,0 +1,9 @@
+## Linux HW1 ##
+	Program to list the information of tcp/udp connections 
+
+============================================================
+
+Compile:
+	Use make to generate a binary named 'hw1'
+Run:
+	sudo ./hw1 [-t|-tcp] [-u|-udt] [filter-string]
